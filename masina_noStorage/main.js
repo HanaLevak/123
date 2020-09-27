@@ -1,21 +1,7 @@
-'use strict';
-
-	/*  !!!
-
-		[ todo: ]
-		- prerobit na localStorage
-		- spravit 'clean' verziu bez js a mozno css hover efektov?
-			a bez .desaturate classu?
-
-	*/
-
-
-// najdeme vsetkych dvoch sexosov
-var dudes = document.querySelectorAll('.contact-form img'),
-	dudes = Array.from(dudes); // zmine nodelist na array
 
 
 // aby sme mohli cyklom kazdemu pridat event listeners
+/*// 
 dudes.forEach(function( dude ) {
 
 	// po kliknuti zdviheme skore
@@ -41,4 +27,6 @@ dudes.forEach(function( dude ) {
 		otherDude.classList.remove('desaturate');
 	});
 
-});
+});/
+
+//**//

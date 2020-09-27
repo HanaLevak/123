@@ -21,13 +21,13 @@
 				<div class="pull-left mitch">
 					<img src="assets/img/mitch.jpg" alt="mitch">
 					<p class="score">13</p>
-					<!-- <button class="btn btn-red" name="mitch" value="1">Mič</button> -->
+					 <button class="btn btn-red" name="mitch" value="1">Mič</button> 
 				</div>
 
 				<div class="pull-right vasho">
 					<img src="assets/img/vasho.jpg" alt="vasho">
 					<p class="score">69</p>
-					<!-- <button class="btn btn-red" name="vasho" value="1">Vašo</button> -->
+					 <button class="btn btn-red" name="vasho" value="1">Vašo</button> 
 				</div>
 			</form>
 
@@ -35,7 +35,130 @@
 	</main>
 
 	<script src="assets/js/lodash.min.js"></script>
-	<script src="assets/js/main.js"></script>
+	<script src="/masina_noStorage/main.js"></script>
 
 </body>
 </html>
+
+<!---------------- >
+example
+````Appends some HTML to all paragraphs.
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>append demo</title>
+<style>
+p {s
+background: yellow;
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+​
+<p>I would like to say: </p>
+​
+<script>
+$( "p" ).append( "<strong>Hello</strong>" );
+</script>
+​
+</body>
+</html>
+
+@example
+````Appends an Element to all paragraphs.
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>append demo</title>
+<style>
+p {
+background: yellow;
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+​
+<p>I would like to say: </p>
+​
+<script>
+$( "p" ).append( document.createTextNode( "Hello" ) );
+</script>
+​
+</body>
+</html>
+
+
+@example
+````Appends a jQuery object (similar to an Array of DOM Elements) to all paragraphs.
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>append demo</title>
+<style>
+p {
+background: yellow;
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+​
+<strong>Hello world!!!</strong>
+<p>I would like to say: </p>
+​
+<script>
+$( "p" ).append( $( "strong" ) );
+</script>
+​
+</body>
+</html>
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>on demo</title>
+<style>
+p {
+background: yellow;
+font-weight: bold;
+cursor: pointer;
+padding: 5px;
+}
+p.over {
+background: #ccc;
+}
+span {
+color: red;
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+​
+<p>Click me!</p>
+<span></span>
+​
+<script>
+var count = 0;
+$( "body" ).on( "click", "p", function() {
+$( this ).after( "<p>Another paragraph! " + (++count) + "</p>" );
+});
+
+
+
+
+</script>
+​
+</body>
+</html>
+
+
