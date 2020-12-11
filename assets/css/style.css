@@ -6,7 +6,9 @@ body{
     color: white;
     padding: 1rem;
 }
-
+.slidein{
+    animation: 3s linear 1s infinite alternate slidein;
+}
 
 .jumbotron-fluid{
     height:100%;
@@ -42,9 +44,7 @@ body{
           animation: 4s linear 0s infinite alternate move_eye;
 }
 
-.slidein{
-    animation: 3s linear 1s infinite alternate slidein;
-}
+
 
 @-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
         @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
@@ -58,7 +58,6 @@ body{
         transform: scale(0.8);
     }
 }      
-
 
 @keyframes slidein {
   from {
