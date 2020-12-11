@@ -7,6 +7,7 @@ body{
     padding: 1rem;
 }
 .slidein{
+
     animation: 3s linear 1s infinite alternate slidein;
 }
 
@@ -17,6 +18,13 @@ body{
     animation-duration: 6s;
     animation-fill-mode: both ;
 };
+
+.jumbotron-fluid:hover{
+transform: rotate(360deg);
+
+}
+
+
 
 .polling_message {
   color: white;
@@ -32,11 +40,11 @@ body{
 }
 
 .cylon_eye{
-  background-color: rgb(234, 255, 0);
+  background-color: #0c0c0c;
   background-image: linear-gradient(to right,
-      rgba(121, 252, 44, 0.955) 25%,
-      rgba(150, 255, 45, 0.976) 50%,
-      rgba(252, 145, 14, 0.9) 75%);
+      rgba(252, 44, 44, 0.955) 25%,
+      rgba(255, 45, 146, 0.976) 50%,
+      rgba(252, 66, 14, 0.9) 75%);
   color: white;
   height: 100%;
   width: 20%;
@@ -66,5 +74,19 @@ body{
 
   to {
     transform: translateX(100%);
+  }
+}
+
+p {
+  animation-duration: 7s;
+  animation-name: rotate  ;
+  animation-iteration-count:1;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
