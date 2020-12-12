@@ -19,21 +19,15 @@ body{
     animation-fill-mode: both ;
 };
 
-.jumbotron-fluid:hover{
-transform: rotate(360deg);
-
-}
-
-
 
 .polling_message {
-  color: white;
+  color: rgb(255,255,255);
   float: left;
   margin-right: 2%;
 }
 
 .view_port {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   height: 25px;
   width: 100%;
   overflow: hidden;
@@ -45,7 +39,7 @@ transform: rotate(360deg);
       rgba(252, 44, 44, 0.955) 25%,
       rgba(255, 45, 146, 0.976) 50%,
       rgba(252, 66, 14, 0.9) 75%);
-  color: white;
+  color: rgb(255,255,255);
   height: 100%;
   width: 20%;
  -webkit-animation: 4s linear 0s infinite alternate move_eye;
@@ -54,8 +48,8 @@ transform: rotate(360deg);
 
 
 
-@-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
-        @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+@-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 110%; }  }
+        @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 110%; }  }
 
 
 @keyframes hero-zoom {
@@ -81,6 +75,7 @@ p {
   animation-duration: 7s;
   animation-name: rotate  ;
   animation-iteration-count:1;
+    animation-delay:8s;
 }
 @keyframes rotate {
   0% {
